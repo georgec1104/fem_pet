@@ -25818,7 +25818,9 @@ function (_React$Component) {
   }]);
 
   return App;
-}(_react.default.Component); // function component
+}(_react.default.Component);
+
+(0, _reactDom.render)(_react.default.createElement(App), document.getElementById("root")); // function component
 // const App = function() {};
 // const App = () => {
 // 	return React.createElement("div", {}, [
@@ -25840,9 +25842,6 @@ function (_React$Component) {
 // 		})
 // 	]);
 // };
-
-
-(0, _reactDom.render)(_react.default.createElement(App), document.getElementById("root"));
 },{"react":"../node_modules/react/index.js","react-dom":"../node_modules/react-dom/index.js"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';

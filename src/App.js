@@ -39,6 +39,7 @@ class App extends React.Component {
 		]);
 	}
 }
+render(React.createElement(App), document.getElementById("root"));
 
 // function component
 // const App = function() {};
@@ -62,5 +63,3 @@ class App extends React.Component {
 // 		})
 // 	]);
 // };
-
-render(React.createElement(App), document.getElementById("root"));
