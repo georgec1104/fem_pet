@@ -6,6 +6,8 @@ const Pet = props => {
 	]);
 };
 
+// function component
+// const App = function() {};
 const App = () => {
 	return React.createElement("div", {}, [
 		React.createElement("h1", {}, "Adopt Me!"),
