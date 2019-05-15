@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/georgec1104/fem_pet/issues"
   },
-  "homepage": "https://github.com/georgec1104/fem_pet#readme"
+  "homepage": "https://github.com/georgec1104/fem_pet#readme",
+  "dependencies": {
+    "eslint": "^5.16.0"
+  }
 }
