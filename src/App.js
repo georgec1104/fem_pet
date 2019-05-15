@@ -6,27 +6,51 @@ const Pet = props => {
 	]);
 };
 
+// class component
+class App extends React.Component {
+	render() {
+		return React.createElement("div", {}, [
+			React.createElement("h1", {}, "Adopt Me!"),
+			React.createElement(Pet, {
+				name: "Luna",
+				animal: "Dog",
+				breed: "Japanese"
+			}),
+			React.createElement(Pet, {
+				name: "Niny",
+				animal: "Dog",
+				breed: "Japanese"
+			}),
+			React.createElement(Pet, {
+				name: "Yami",
+				animal: "Bird",
+				breed: "mixed"
+			})
+		]);
+	}
+}
+
 // function component
 // const App = function() {};
-const App = () => {
-	return React.createElement("div", {}, [
-		React.createElement("h1", {}, "Adopt Me!"),
-		React.createElement(Pet, {
-			name: "Luna",
-			animal: "Dog",
-			breed: "Japanese"
-		}),
-		React.createElement(Pet, {
-			name: "Niny",
-			animal: "Dog",
-			breed: "Japanese"
-		}),
-		React.createElement(Pet, {
-			name: "Yami",
-			animal: "Bird",
-			breed: "mixed"
-		})
-	]);
-};
+// const App = () => {
+// 	return React.createElement("div", {}, [
+// 		React.createElement("h1", {}, "Adopt Me!"),
+// 		React.createElement(Pet, {
+// 			name: "Luna",
+// 			animal: "Dog",
+// 			breed: "Japanese"
+// 		}),
+// 		React.createElement(Pet, {
+// 			name: "Niny",
+// 			animal: "Dog",
+// 			breed: "Japanese"
+// 		}),
+// 		React.createElement(Pet, {
+// 			name: "Yami",
+// 			animal: "Bird",
+// 			breed: "mixed"
+// 		})
+// 	]);
+// };
 
 ReactDOM.render(React.createElement(App), document.getElementById("root"));
