@@ -1,0 +1,19 @@
+{
+  "name": "pet",
+  "version": "1.0.0",
+  "description": "FEM Pet Practice project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/georgec1104/fem_pet.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/georgec1104/fem_pet/issues"
+  },
+  "homepage": "https://github.com/georgec1104/fem_pet#readme"
+}
