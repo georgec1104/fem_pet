@@ -46416,7 +46416,30 @@ function (_React$Component) {
   _createClass(Pet, [{
     key: "render",
     value: function render() {
-      return _react.default.createElement("div", null, _react.default.createElement("h1", null, props.name), _react.default.createElement("h2", null, props.animal), _react.default.createElement("h3", null, props.breed));
+      var _this$props = this.props,
+          name = _this$props.name,
+          animal = _this$props.animal,
+          breed = _this$props.breed,
+          media = _this$props.media,
+          location = _this$props.location;
+      var photos = [];
+
+      if (media && media.photos && media.photos.photo) {
+        photos = media.photos.photo.filter(function (photo) {
+          return photo["@size"] === "pn";
+        });
+      }
+
+      return _react.default.createElement("div", {
+        className: "pet"
+      }, _react.default.createElement("div", {
+        className: "image-container"
+      }, _react.default.createElement("img", {
+        src: photos[0].value,
+        alt: name
+      })), _react.default.createElement("div", {
+        className: "info"
+      }, _react.default.createElement("h1", null, name), _react.default.createElement("h2", null, animal, " - ", breed, " - ", location)));
     }
   }]);
 
@@ -46485,7 +46508,7 @@ function (_React$Component) {
 
       petfinder.pet.find({
         output: "full",
-        location: "Boston, MA"
+        location: "Seatle, WA"
       }).then(function (data) {
         var pets; // Verify if data are coming in
 
@@ -46523,7 +46546,10 @@ function (_React$Component) {
           key: pet.id,
           animal: pet.animal,
           name: pet.name,
-          breed: breed
+          breed: breed,
+          media: pet.media // template string uses backtick ``
+          ,
+          location: "".concat(pet.contact.city, ", ").concat(pet.contact.state)
         });
       }))); // render() {
       // 	return (

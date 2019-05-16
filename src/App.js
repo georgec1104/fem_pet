@@ -18,7 +18,7 @@ class App extends React.Component {
 	}
 	componentDidMount() {
 		petfinder.pet
-			.find({ output: "full", location: "Boston, MA" })
+			.find({ output: "full", location: "Seatle, WA" })
 			.then(data => {
 				let pets;
 
@@ -57,6 +57,9 @@ class App extends React.Component {
 								animal={pet.animal}
 								name={pet.name}
 								breed={breed}
+								media={pet.media}
+								// template string uses backtick ``
+								location={`${pet.contact.city}, ${pet.contact.state}`}
 							/>
 						);
 					})}
