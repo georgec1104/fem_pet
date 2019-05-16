@@ -49,7 +49,7 @@ class Details extends React.Component {
 		if (this.state.loading) {
 			return <h1>Loading ...</h1>;
 		}
-		const { animal, breed, location, description } = this.state;
+		const { name, animal, breed, location, description } = this.state;
 		return (
 			<div className="details">
 				<div>

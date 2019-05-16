@@ -49295,6 +49295,7 @@ function (_React$Component) {
       }
 
       var _this$state = this.state,
+          name = _this$state.name,
           animal = _this$state.animal,
           breed = _this$state.breed,
           location = _this$state.location,
