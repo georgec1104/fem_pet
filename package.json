@@ -18,6 +18,7 @@
   },
   "homepage": "https://github.com/georgec1104/fem_pet#readme",
   "dependencies": {
+    "@reach/router": "^1.2.1",
     "eslint": "^5.16.0",
     "petfinder-client": "^1.0.2",
     "prettier": "^1.17.1",
