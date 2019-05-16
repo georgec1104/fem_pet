@@ -25815,21 +25815,40 @@ function (_React$Component) {
   }, {
     key: "render",
     value: function render() {
-      return _react.default.createElement("div", {}, [_react.default.createElement("h1", {
-        onClick: this.handleTitleClick
-      }, "Adopt Me Please!"), _react.default.createElement(_Pet.default, {
+      return _react.default.createElement("div", null, _react.default.createElement("h1", null, "Adopt Me!"), _react.default.createElement(_Pet.default, {
         name: "Luna",
-        animal: "Dog",
-        breed: "Japanese"
+        animal: "dog",
+        breed: "Havanese"
       }), _react.default.createElement(_Pet.default, {
-        name: "Niny",
-        animal: "Dog",
-        breed: "Japanese"
+        name: "Leisy",
+        animal: "cat",
+        breed: "Blacky"
       }), _react.default.createElement(_Pet.default, {
-        name: "Yami",
-        animal: "Bird",
-        breed: "mixed"
-      })]);
+        name: "Ginger",
+        animal: "fish",
+        breed: "Golden"
+      })); // return React.createElement("div", {}, [
+      // 	React.createElement(
+      // 		"h1",
+      // 	{ onClick: this.handleTitleClick },
+      // 		"Adopt Me Please!"
+      // 	),
+      // 	React.createElement(Pet, {
+      // 		name: "Luna",
+      // 		animal: "Dog",
+      // 		breed: "Japanese"
+      // 	}),
+      // 	React.createElement(Pet, {
+      // 		name: "Niny",
+      // 		animal: "Dog",
+      // 		breed: "Japanese"
+      // 	}),
+      // 	React.createElement(Pet, {
+      // 		name: "Yami",
+      // 		animal: "Bird",
+      // 		breed: "mixed"
+      // 	})
+      // ]);
     }
   }]);
 

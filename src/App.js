@@ -8,28 +8,36 @@ class App extends React.Component {
 		alert("you clicked the title");
 	}
 	render() {
-		return React.createElement("div", {}, [
-			React.createElement(
-				"h1",
-				{ onClick: this.handleTitleClick },
-				"Adopt Me Please!"
-			),
-			React.createElement(Pet, {
-				name: "Luna",
-				animal: "Dog",
-				breed: "Japanese"
-			}),
-			React.createElement(Pet, {
-				name: "Niny",
-				animal: "Dog",
-				breed: "Japanese"
-			}),
-			React.createElement(Pet, {
-				name: "Yami",
-				animal: "Bird",
-				breed: "mixed"
-			})
-		]);
+		return (
+			<div>
+				<h1>Adopt Me!</h1>
+				<Pet name="Luna" animal="dog" breed="Havanese" />
+				<Pet name="Leisy" animal="cat" breed="Blacky" />
+				<Pet name="Ginger" animal="fish" breed="Golden" />
+			</div>
+		);
+		// return React.createElement("div", {}, [
+		// 	React.createElement(
+		// 		"h1",
+		// 	{ onClick: this.handleTitleClick },
+		// 		"Adopt Me Please!"
+		// 	),
+		// 	React.createElement(Pet, {
+		// 		name: "Luna",
+		// 		animal: "Dog",
+		// 		breed: "Japanese"
+		// 	}),
+		// 	React.createElement(Pet, {
+		// 		name: "Niny",
+		// 		animal: "Dog",
+		// 		breed: "Japanese"
+		// 	}),
+		// 	React.createElement(Pet, {
+		// 		name: "Yami",
+		// 		animal: "Bird",
+		// 		breed: "mixed"
+		// 	})
+		// ]);
 	}
 }
 render(React.createElement(App), document.getElementById("root"));
