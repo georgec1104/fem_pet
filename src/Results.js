@@ -57,6 +57,7 @@ class Results extends React.Component {
 							media={pet.media}
 							// template string uses backtick ``
 							location={`${pet.contact.city}, ${pet.contact.state}`}
+							id={pet.id}
 						/>
 					);
 				})}
